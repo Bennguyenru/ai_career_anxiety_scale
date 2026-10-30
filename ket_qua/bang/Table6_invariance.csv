@@ -1,0 +1,10 @@
+"Grouping","Step","chisq.scaled","df.scaled","pvalue.scaled","cfi.robust","tli.robust","rmsea.robust","srmr","dCFI"
+"Discipline (IT vs Non-IT)","configural",75.137,54,0.03,0.983,0.977,0.046,0.031,NA
+"Discipline (IT vs Non-IT)","metric",89.629,62,0.012,0.978,0.975,0.048,0.046,0.005
+"Discipline (IT vs Non-IT)","scalar",97.361,70,0.017,0.979,0.978,0.044,0.048,-0.001
+"Year (Junior vs Senior)","configural",74.007,54,0.037,0.983,0.977,0.045,0.033,NA
+"Year (Junior vs Senior)","metric",81.111,62,0.052,0.984,0.982,0.04,0.041,-0.001
+"Year (Junior vs Senior)","scalar",87.545,70,0.076,0.986,0.985,0.036,0.043,-0.002
+"Gender (Male vs Female)","configural",63.543,54,0.176,0.991,0.989,0.032,0.031,NA
+"Gender (Male vs Female)","metric",69.752,62,0.233,0.993,0.992,0.026,0.038,-0.002
+"Gender (Male vs Female)","scalar",77.979,70,0.24,0.993,0.993,0.025,0.041,0

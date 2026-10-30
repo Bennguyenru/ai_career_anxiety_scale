@@ -1,0 +1,14 @@
+# Du lieu tho chua email va thoi gian nop: KHONG BAO GIO day len
+data/Tong_hop_form.xlsx
+data/*.xlsx
+data/*raw*
+*Form Responses*
+# Rac cua R/RStudio/macOS
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+*.tiff
+# Du lieu cap ca nhan (ke ca ban da lam sach) chi chia se theo yeu cau, KHONG day len
+data/*.csv
+!data/codebook.csv

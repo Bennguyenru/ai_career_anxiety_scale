@@ -1,0 +1,202 @@
+RESULTS: VALIDATION OF THE 'AI CAREER ANXIETY' SCALE
+N = 464 | estimator MLR | date 2026-10-30 19:38 
+Data file: data/ai_career_anxiety_oct2026_n464.csv 
+
+== TABLE 1: Sample description ==
+         Variable               Group Count Percent
+       Discipline Business/Management   172    37.1
+       Discipline        Design/Media    91    19.6
+       Discipline                  IT   117    25.2
+       Discipline               Other    84    18.1
+    Year of study            >4 years    10     2.2
+    Year of study              Year 1    69    14.9
+    Year of study              Year 2   132    28.4
+    Year of study              Year 3   168    36.2
+    Year of study              Year 4    85    18.3
+           Gender              Female   284    61.2
+           Gender                Male   158    34.1
+           Gender               Other    16     3.4
+           Gender   Prefer not to say     6     1.3
+ AI use frequency               Daily    82    17.7
+ AI use frequency               Never     6     1.3
+ AI use frequency               Often   197    42.5
+ AI use frequency              Rarely    34     7.3
+ AI use frequency           Sometimes   145    31.2
+       Studied AI                  No   119    25.6
+       Studied AI         Yes, formal   127    27.4
+       Studied AI       Yes, informal   218    47.0
+
+== TABLE 3: Competing models (9 items) ==
+          Model chisq.scaled df.scaled pvalue.scaled cfi.robust tli.robust rmsea.robust  srmr             Admissible
+ Unidimensional       33.044        27         0.196      0.995      0.993        0.025 0.024                    Yes
+    ThreeFactor       30.655        24         0.164      0.994      0.992        0.027 0.023     No (latent r >= 1)
+    SecondOrder       30.655        24         0.164      0.994      0.992        0.027 0.023 No (negative variance)
+       Bifactor           NA        NA            NA         NA         NA           NA    NA  No (did not converge)
+Facet correlations in the three-factor model (values near or above 1 mean the facets are not distinct):
+      OBS   OPP   CMP
+OBS 1.000            
+OPP 0.984 1.000      
+CMP 0.968 1.037 1.000
+
+== Measurement model fit ==
+ chisq.scaled     df.scaled pvalue.scaled    cfi.robust    tli.robust  rmsea.robust          srmr 
+      182.123       129.000         0.001         0.976         0.972         0.032         0.039 
+
+== TABLE 2: Item descriptives and loadings ==
+ Item Mean   SD  Skew Kurtosis ItemTotal StdLoading
+ ANX1 3.54 1.11 -0.49    -0.45      0.60       0.66
+ ANX2 3.50 1.13 -0.43    -0.58      0.65       0.71
+ ANX3 3.48 1.12 -0.32    -0.74      0.61       0.66
+ ANX4 3.53 1.11 -0.40    -0.53      0.61       0.66
+ ANX5 3.53 1.10 -0.44    -0.51      0.59       0.64
+ ANX6 3.55 1.10 -0.38    -0.58      0.64       0.68
+ ANX7 3.45 1.15 -0.31    -0.74      0.64       0.68
+ ANX8 3.59 1.12 -0.51    -0.46      0.66       0.69
+ ANX9 3.45 1.07 -0.43    -0.44      0.60       0.63
+ THR1 3.54 1.09 -0.51    -0.37      0.60       0.74
+ THR2 3.34 1.09 -0.28    -0.53      0.61       0.73
+ THR3 3.39 1.17 -0.34    -0.71      0.58       0.70
+ ASE1 4.00 0.86 -0.82     0.80      0.35       0.54
+ ASE2 3.98 0.90 -0.77     0.44      0.41       0.62
+ ASE3 3.96 0.90 -0.57    -0.12      0.31       0.45
+ CSE1 3.74 0.93 -0.30    -0.42      0.42       0.57
+ CSE2 3.91 0.93 -0.49    -0.44      0.50       0.64
+ CSE3 3.92 0.90 -0.39    -0.59      0.40       0.60
+
+== TABLE 4: Reliability, CR, AVE ==
+ Scale Items Alpha    CR   AVE
+   ANX     9 0.878 0.878 0.446
+   THR     3 0.765 0.767 0.523
+   ASE     3 0.544 0.552 0.294
+   CSE     3 0.630 0.633 0.366
+
+== TABLE 5: HTMT ==
+      ANX   THR   ASE   CSE
+ANX 1.000                  
+THR 0.871 1.000            
+ASE 0.330 0.279 1.000      
+CSE 0.131 0.043 0.731 1.000
+
+== Discriminant ANX vs THR (1- vs 2-factor) ==
+          chisq.scaled df.scaled pvalue.scaled cfi.robust tli.robust rmsea.robust  srmr
+OneFactor       93.397        54         0.001      0.977      0.972        0.044 0.033
+TwoFactor       61.253        53         0.204      0.995      0.994        0.020 0.026
+
+Satorra-Bentler scaled difference:
+
+Scaled Chi-Squared Difference Test (method = “satorra.bentler.2001”)
+
+lavaan->lavTestLRT():  
+   lavaan NOTE: The “Chisq” column contains standard test statistics, not the robust test that should be reported per model. A 
+   robust difference test is a function of two standard (not robust) statistics.
+
+   Df   AIC   BIC   Chisq Chisq diff   RMSEA Df diff Pr(>Chisq)    
+f2 53 14854 14957  75.978                                          
+f1 54 14893 14992 116.991     21.572 0.29033       1  3.408e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Latent correlation ANX ~ THR:
+   lhs rhs est.std    se ci.lower ci.upper
+27 ANX THR    0.87 0.035    0.802    0.939
+
+== TABLE 7: Composite correlations ==
+      ANX   THR   ASE   CSE
+ANX 1.000 0.715 0.227 0.079
+THR 0.715 1.000 0.182 0.015
+ASE 0.227 0.182 1.000 0.426
+CSE 0.079 0.015 0.426 1.000
+
+== Invariance: Discipline (IT vs Non-IT) ==
+           chisq.scaled df.scaled pvalue.scaled cfi.robust tli.robust rmsea.robust  srmr   dCFI
+configural       75.137        54         0.030      0.983      0.977        0.046 0.031     NA
+metric           89.629        62         0.012      0.978      0.975        0.048 0.046  0.005
+scalar           97.361        70         0.017      0.979      0.978        0.044 0.048 -0.001
+
+== Invariance: Year (Junior vs Senior) ==
+           chisq.scaled df.scaled pvalue.scaled cfi.robust tli.robust rmsea.robust  srmr   dCFI
+configural       74.007        54         0.037      0.983      0.977        0.045 0.033     NA
+metric           81.111        62         0.052      0.984      0.982        0.040 0.041 -0.001
+scalar           87.545        70         0.076      0.986      0.985        0.036 0.043 -0.002
+
+== Invariance: Gender (Male vs Female) ==
+           chisq.scaled df.scaled pvalue.scaled cfi.robust tli.robust rmsea.robust  srmr   dCFI
+configural       63.543        54         0.176      0.991      0.989        0.032 0.031     NA
+metric           69.752        62         0.233      0.993      0.992        0.026 0.038 -0.002
+scalar           77.979        70         0.240      0.993      0.993        0.025 0.041  0.000
+Parallel analysis suggests that the number of factors =  1  and the number of components =  NA 
+
+== EFA (random half A, n = 232 ) ==
+KMO = 0.917 | Bartlett chi2( 36 ) = 747.18 p = 8.94e-134 
+Eigenvalues: 4.49 0.76 0.69 0.66 0.61 0.51 0.47 0.41 0.39 
+Parallel analysis factors: 1 
+One-factor loadings: 0.56 0.72 0.62 0.63 0.64 0.66 0.69 0.72 0.7 | variance explained: 0.437 
+Three-factor oblimin loadings:
+       ML2   ML3   ML1
+ANX1  0.12  0.32  0.21
+ANX2  0.40  0.42 -0.02
+ANX3  0.35  0.30  0.04
+ANX4  0.76 -0.08  0.01
+ANX5  0.33  0.14  0.24
+ANX6  0.32  0.20  0.22
+ANX7  0.62  0.09  0.05
+ANX8  0.00 -0.01  1.00
+ANX9 -0.02  0.82  0.03
+     ML2  ML3  ML1
+ML2 1.00 0.69 0.62
+ML3 0.69 1.00 0.57
+ML1 0.62 0.57 1.00
+
+== Holdout CFA (random half B, n = 232 ) ==
+         chisq.scaled             df.scaled         pvalue.scaled            cfi.robust            tli.robust          rmsea.robust 
+               43.589                27.000                 0.023                 0.975                 0.966                 0.057 
+                 srmr rmsea.ci.lower.robust rmsea.ci.upper.robust 
+                0.038                 0.022                 0.087 
+
+== Single-factor test for common-method variance (18 items) ==
+ chisq.scaled     df.scaled pvalue.scaled    cfi.robust    tli.robust  rmsea.robust          srmr 
+      509.251       135.000         0.000         0.831         0.809         0.084         0.086 
+
+== RMSEA 90% CI ==
+               rmsea.ci.lower.robust rmsea.ci.upper.robust
+Unidimensional                 0.000                 0.050
+Measurement                    0.021                 0.043
+
+== Correlates of the anxiety composite ==
+AI use frequency: Spearman rho = 0.075 p = 0.107 
+Studied AI: Welch F( 2 , 239.1 ) = 11.5 p = 1.7e-05 eta2 = 0.059 
+                             Chưa Có, chính thức trong chương trình              Có, không chính thức 
+                             3.19                              3.58                              3.65 
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  dat$ANX_mean and dat$da_hoc_AI 
+
+                                  Chưa    Có, chính thức trong chương trình
+Có, chính thức trong chương trình 0.00087 -                                
+Có, không chính thức              1e-05   0.39319                          
+
+P value adjustment method: holm 
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  dat$ANX_mean and yr4 
+
+       Năm 1   Năm 2  Năm 3 
+Năm 2  0.0012  -      -     
+Năm 3  5.6e-07 0.0644 -     
+Năm 4+ 0.0044  0.9120 0.0834
+
+P value adjustment method: holm 
+
+	Pairwise comparisons using t tests with non-pooled SD 
+
+data:  dat$ANX_mean and dat$khoi_nganh 
+
+                        Công nghệ thông tin Khác    Kinh doanh / Quản trị
+Khác                    0.00065             -       -                    
+Kinh doanh / Quản trị   0.80865             3.1e-06 -                    
+Thiết kế / Truyền thông 0.86832             3.2e-05 0.86832              
+
+P value adjustment method: holm 
+
+===== DONE =====

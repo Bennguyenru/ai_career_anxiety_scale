@@ -1,0 +1,47 @@
+ADDITIONAL VALIDITY / PRECISION | N = 464 
+$ANX_ASE
+    r    lo    hi 
+0.319 0.164 0.475 
+
+$THR_ASE
+    r    lo    hi 
+0.266 0.101 0.432 
+
+$ANX_CSE
+     r     lo     hi 
+ 0.108 -0.052  0.268 
+
+$THR_CSE
+     r     lo     hi 
+ 0.023 -0.134  0.181 
+
+
+Scaled Chi-Squared Difference Test (method = “satorra.bentler.2001”)
+
+lavaan->lavTestLRT():  
+   lavaan NOTE: The “Chisq” column contains standard test statistics, not the robust test that should be reported per model. A 
+   robust difference test is a function of two standard (not robust) statistics.
+
+         Df   AIC   BIC  Chisq Chisq diff RMSEA Df diff Pr(>Chisq)
+f_free  129 21826 22000 214.32                                    
+f_eqASE 130 21826 21995 215.43    0.78773     0       1     0.3748
+
+Scaled Chi-Squared Difference Test (method = “satorra.bentler.2001”)
+
+lavaan->lavTestLRT():  
+   lavaan NOTE: The “Chisq” column contains standard test statistics, not the robust test that should be reported per model. A 
+   robust difference test is a function of two standard (not robust) statistics.
+
+         Df   AIC   BIC  Chisq Chisq diff    RMSEA Df diff Pr(>Chisq)
+f_free  129 21826 22000 214.32                                       
+f_eqCSE 130 21828 21997 217.35     2.7049 0.064149       1        0.1
+
+Slopes (logistic metric):
+ANX1 ANX2 ANX3 ANX4 ANX5 ANX6 ANX7 ANX8 ANX9 
+1.50 1.72 1.57 1.56 1.47 1.75 1.75 1.84 1.47 
+Boundary range: -2.49 to 1.31 
+Conditional reliability >= .80 for theta in -3 2.05 ; peak info 7.44 at -0.75 
+Share of sample with theta in that range (from factor scores):
+[1] 0.985
+ 10%  25%  50%  75%  90% 
+2.33 3.00 3.78 4.11 4.33 

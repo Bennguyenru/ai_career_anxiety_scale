@@ -1,0 +1,5 @@
+"Model","chisq.scaled","df.scaled","pvalue.scaled","cfi.robust","tli.robust","rmsea.robust","srmr","Admissible"
+"Unidimensional",33.044,27,0.196,0.995,0.993,0.025,0.024,"Yes"
+"ThreeFactor",30.655,24,0.164,0.994,0.992,0.027,0.023,"No (latent r >= 1)"
+"SecondOrder",30.655,24,0.164,0.994,0.992,0.027,0.023,"No (negative variance)"
+"Bifactor",NA,NA,NA,NA,NA,NA,NA,"No (did not converge)"

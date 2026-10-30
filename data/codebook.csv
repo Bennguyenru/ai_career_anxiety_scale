@@ -1,0 +1,12 @@
+variable,description,values
+ID,Sequential respondent number assigned after cleaning (not linked to any identity),1-464
+khoi_nganh,Field of study,"Kinh doanh / Quản trị = business/management; Công nghệ thông tin = information technology; Thiết kế / Truyền thông = design/communication; Khác = other"
+nam_hoc,Year of study,"Năm 1-Năm 4 = Year 1-4; Trên 4 năm = more than four years"
+gioi_tinh,Gender,"Nam = male; Nữ = female; Khác = other; Không muốn nêu = prefer not to say"
+tan_suat_AI,Frequency of generative AI use,"Chưa từng = never; Hiếm khi = rarely; Thỉnh thoảng = sometimes; Thường xuyên = often; Hằng ngày = daily"
+da_hoc_AI,Prior AI training,"Chưa = none; Có, không chính thức = yes, informal; Có, chính thức trong chương trình = yes, formal coursework"
+THR1-THR3,Threat appraisal items,1 = strongly disagree to 5 = strongly agree
+ANX1-ANX9,AI career anxiety items (scale under validation),1 = strongly disagree to 5 = strongly agree
+ATTN,Attention check (instructed response),correct answer = 2; all retained cases passed
+ASE1-ASE3,AI self-efficacy items,1 = strongly disagree to 5 = strongly agree
+CSE1-CSE3,Career self-efficacy items,1 = strongly disagree to 5 = strongly agree

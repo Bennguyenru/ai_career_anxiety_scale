@@ -1,0 +1,575 @@
+{
+  "N": 464,
+  "omega": {
+    "ANX": 0.879,
+    "THR": 0.766,
+    "ASE": 0.554,
+    "CSE": 0.635
+  },
+  "omega_ANX_onefactor": 0.879,
+  "wlsmv": {
+    "fit": {
+      "ANX_THR_one": [
+        117.301,
+        54,
+        0,
+        0.986,
+        0.983,
+        0.05,
+        0.034
+      ],
+      "ANX_THR_two": [
+        79.852,
+        53,
+        0.01,
+        0.994,
+        0.993,
+        0.033,
+        0.028
+      ],
+      "Measurement": [
+        242.734,
+        129,
+        0,
+        0.977,
+        0.973,
+        0.044,
+        0.044
+      ],
+      "OneFactor": [
+        45.354,
+        27,
+        0.015,
+        0.994,
+        0.992,
+        0.038,
+        0.026
+      ],
+      "ThreeFactor": [
+        41.983,
+        24,
+        0.013,
+        0.994,
+        0.991,
+        0.04,
+        0.025
+      ]
+    },
+    "fit_rows": [
+      "OneFactor",
+      "ThreeFactor",
+      "Measurement",
+      "ANX_THR_one",
+      "ANX_THR_two"
+    ],
+    "fit_table": [
+      [
+        45.354,
+        27,
+        0.015,
+        0.994,
+        0.992,
+        0.038,
+        0.026
+      ],
+      [
+        41.983,
+        24,
+        0.013,
+        0.994,
+        0.991,
+        0.04,
+        0.025
+      ],
+      [
+        242.734,
+        129,
+        0,
+        0.977,
+        0.973,
+        0.044,
+        0.044
+      ],
+      [
+        117.301,
+        54,
+        0,
+        0.986,
+        0.983,
+        0.05,
+        0.034
+      ],
+      [
+        79.852,
+        53,
+        0.01,
+        0.994,
+        0.993,
+        0.033,
+        0.028
+      ]
+    ],
+    "facet_r": [
+      1.003,
+      0.993,
+      1.056
+    ],
+    "anx_loadings_range": [
+      0.64,
+      0.73
+    ],
+    "anx_thr_r": [
+      0.878,
+      0.824,
+      0.932
+    ],
+    "diff_chisq": 18.66,
+    "diff_df": 1,
+    "diff_p": 1.56e-05
+  },
+  "esem": {
+    "geomin": {
+      "converged": false
+    },
+    "oblimin": {
+      "converged": false
+    }
+  },
+  "latent_means": {
+    "discipline": {
+      "groups": [
+        "IT",
+        "Non-IT"
+      ],
+      "ns": [
+        117,
+        347
+      ],
+      "diff": -0.039,
+      "se": 0.085,
+      "p": 0.649,
+      "d": -0.05
+    },
+    "year": {
+      "groups": [
+        "Junior",
+        "Senior"
+      ],
+      "ns": [
+        201,
+        263
+      ],
+      "diff": 0.267,
+      "se": 0.072,
+      "p": 0.000222,
+      "d": 0.38
+    },
+    "gender": {
+      "groups": [
+        "Male",
+        "Female"
+      ],
+      "ns": [
+        158,
+        284
+      ],
+      "diff": 0.245,
+      "se": 0.086,
+      "p": 0.00453,
+      "d": 0.33
+    }
+  },
+  "mimic": {
+    "n": 442,
+    "anx_no_thr": [
+      {
+        "rhs": "female",
+        "est.std": 0.115,
+        "pvalue": 0.0242
+      },
+      {
+        "rhs": "year1",
+        "est.std": -0.172,
+        "pvalue": 0.00138
+      },
+      {
+        "rhs": "other_disc",
+        "est.std": -0.205,
+        "pvalue": 0.000158
+      },
+      {
+        "rhs": "no_ai_training",
+        "est.std": -0.159,
+        "pvalue": 0.00601
+      }
+    ],
+    "thr": [
+      {
+        "rhs": "female",
+        "est.std": 0.119,
+        "pvalue": 0.02
+      },
+      {
+        "rhs": "year1",
+        "est.std": -0.162,
+        "pvalue": 0.00315
+      },
+      {
+        "rhs": "other_disc",
+        "est.std": -0.301,
+        "pvalue": 3.81e-09
+      },
+      {
+        "rhs": "no_ai_training",
+        "est.std": -0.165,
+        "pvalue": 0.00362
+      }
+    ],
+    "anx_with_thr": [
+      {
+        "rhs": "THR",
+        "est.std": 0.885,
+        "pvalue": 0
+      },
+      {
+        "rhs": "female",
+        "est.std": 0.01,
+        "pvalue": 0.799
+      },
+      {
+        "rhs": "year1",
+        "est.std": -0.029,
+        "pvalue": 0.488
+      },
+      {
+        "rhs": "other_disc",
+        "est.std": 0.061,
+        "pvalue": 0.219
+      },
+      {
+        "rhs": "no_ai_training",
+        "est.std": -0.013,
+        "pvalue": 0.784
+      }
+    ],
+    "r2": [
+      0.433,
+      0.504,
+      0.45,
+      0.451,
+      0.421,
+      0.469,
+      0.476,
+      0.476,
+      0.407,
+      0.556,
+      0.542,
+      0.504,
+      0.768,
+      0.23
+    ],
+    "fit": [
+      0.992,
+      0.99,
+      0.021,
+      0.028
+    ]
+  },
+  "chat_luong": {
+    "N": 464,
+    "diff_rel": {
+      "cors": {
+        "ANX_ASE": [
+          0.319,
+          0.164,
+          0.475
+        ],
+        "THR_ASE": [
+          0.266,
+          0.101,
+          0.432
+        ],
+        "ANX_CSE": [
+          0.108,
+          -0.052,
+          0.268
+        ],
+        "THR_CSE": [
+          0.023,
+          -0.134,
+          0.181
+        ]
+      },
+      "eq_ASE": {
+        "dchi": 0.79,
+        "df": 1,
+        "p": 0.375
+      },
+      "eq_CSE": {
+        "dchi": 2.7,
+        "df": 1,
+        "p": 0.1
+      }
+    },
+    "irt": {
+      "a_logit": {
+        "ANX1": 1.5,
+        "ANX2": 1.72,
+        "ANX3": 1.57,
+        "ANX4": 1.56,
+        "ANX5": 1.47,
+        "ANX6": 1.75,
+        "ANX7": 1.75,
+        "ANX8": 1.84,
+        "ANX9": 1.47
+      },
+      "a_min": 1.47,
+      "a_max": 1.84,
+      "b_min": -2.49,
+      "b_max": 1.31,
+      "rel80_lo": -3,
+      "rel80_hi": 2.05,
+      "peak_info": 7.44,
+      "peak_theta": -0.75,
+      "share_in_range": 0.985
+    },
+    "norms": {
+      "p10": 2.33,
+      "p25": 3,
+      "p50": 3.78,
+      "p75": 4.11,
+      "p90": 4.33
+    }
+  },
+  "phan_bien": {
+    "poly": {
+      "ev": [4.73, 0.74, 0.68],
+      "pa": 1,
+      "lmin": 0.57,
+      "lmax": 0.75,
+      "var": 0.468
+    },
+    "esem": {
+      "loadings": [
+        {
+          "item": "ANX1",
+          "ANX_f": 0.46,
+          "THR_f": 0.24,
+          "_row": "ANX1"
+        },
+        {
+          "item": "ANX2",
+          "ANX_f": 0.46,
+          "THR_f": 0.28,
+          "_row": "ANX2"
+        },
+        {
+          "item": "ANX3",
+          "ANX_f": 0.45,
+          "THR_f": 0.24,
+          "_row": "ANX3"
+        },
+        {
+          "item": "ANX4",
+          "ANX_f": 0.44,
+          "THR_f": 0.25,
+          "_row": "ANX4"
+        },
+        {
+          "item": "ANX5",
+          "ANX_f": 0.58,
+          "THR_f": 0.08,
+          "_row": "ANX5"
+        },
+        {
+          "item": "ANX6",
+          "ANX_f": 0.75,
+          "THR_f": -0.06,
+          "_row": "ANX6"
+        },
+        {
+          "item": "ANX7",
+          "ANX_f": 0.6,
+          "THR_f": 0.1,
+          "_row": "ANX7"
+        },
+        {
+          "item": "ANX8",
+          "ANX_f": 0.8,
+          "THR_f": -0.11,
+          "_row": "ANX8"
+        },
+        {
+          "item": "ANX9",
+          "ANX_f": 0.59,
+          "THR_f": 0.06,
+          "_row": "ANX9"
+        },
+        {
+          "item": "THR1",
+          "ANX_f": 0.07,
+          "THR_f": 0.68,
+          "_row": "THR1"
+        },
+        {
+          "item": "THR2",
+          "ANX_f": -0.02,
+          "THR_f": 0.77,
+          "_row": "THR2"
+        },
+        {
+          "item": "THR3",
+          "ANX_f": 0.1,
+          "THR_f": 0.6,
+          "_row": "THR3"
+        }
+      ],
+      "r": 0.78,
+      "fit": {
+        "cfi.robust": 0.999,
+        "rmsea.robust": 0.013,
+        "srmr": 0.02
+      },
+      "anx_cross_max": 0.28,
+      "anx_cross_items": ["ANX1", "ANX2", "ANX3", "ANX4"]
+    },
+    "localdep": {
+      "max": 0.072,
+      "n_gt10": 0,
+      "n": 36,
+      "fit": {
+        "cfi.scaled": 0.994,
+        "rmsea.scaled": 0.038,
+        "srmr": 0.026
+      }
+    },
+    "ordinv": {
+      "discipline": {
+        "cfi": {
+          "configural": 0.986,
+          "thresholds": 0.986,
+          "loadings": 0.984,
+          "intercepts": 0.986
+        },
+        "dcfi_max": 0.002
+      },
+      "year": {
+        "cfi": {
+          "configural": 0.984,
+          "thresholds": 0.979,
+          "loadings": 0.983,
+          "intercepts": 0.985
+        },
+        "dcfi_max": 0.005
+      },
+      "gender": {
+        "cfi": {
+          "configural": 0.99,
+          "thresholds": 0.991,
+          "loadings": 0.994,
+          "intercepts": 0.994
+        },
+        "dcfi_max": 0.003
+      }
+    },
+    "mimic_ci": {
+      "anx_no": [
+        {
+          "rhs": "female",
+          "est.std": 0.11,
+          "ci.lower": 0.01,
+          "ci.upper": 0.21,
+          "pvalue": 0.024
+        },
+        {
+          "rhs": "year1",
+          "est.std": -0.17,
+          "ci.lower": -0.28,
+          "ci.upper": -0.07,
+          "pvalue": 0.001
+        },
+        {
+          "rhs": "other_disc",
+          "est.std": -0.21,
+          "ci.lower": -0.31,
+          "ci.upper": -0.1,
+          "pvalue": 0
+        },
+        {
+          "rhs": "no_ai_training",
+          "est.std": -0.16,
+          "ci.lower": -0.27,
+          "ci.upper": -0.05,
+          "pvalue": 0.006
+        }
+      ],
+      "thr": [
+        {
+          "rhs": "female",
+          "est.std": 0.12,
+          "ci.lower": 0.02,
+          "ci.upper": 0.22,
+          "pvalue": 0.02
+        },
+        {
+          "rhs": "year1",
+          "est.std": -0.16,
+          "ci.lower": -0.27,
+          "ci.upper": -0.05,
+          "pvalue": 0.003
+        },
+        {
+          "rhs": "other_disc",
+          "est.std": -0.3,
+          "ci.lower": -0.4,
+          "ci.upper": -0.2,
+          "pvalue": 0
+        },
+        {
+          "rhs": "no_ai_training",
+          "est.std": -0.16,
+          "ci.lower": -0.28,
+          "ci.upper": -0.05,
+          "pvalue": 0.004
+        }
+      ],
+      "anx_thr": [
+        {
+          "rhs": "THR",
+          "est.std": 0.88,
+          "ci.lower": 0.79,
+          "ci.upper": 0.98,
+          "pvalue": 0
+        },
+        {
+          "rhs": "female",
+          "est.std": 0.01,
+          "ci.lower": -0.07,
+          "ci.upper": 0.08,
+          "pvalue": 0.799
+        },
+        {
+          "rhs": "year1",
+          "est.std": -0.03,
+          "ci.lower": -0.11,
+          "ci.upper": 0.05,
+          "pvalue": 0.488
+        },
+        {
+          "rhs": "other_disc",
+          "est.std": 0.06,
+          "ci.lower": -0.04,
+          "ci.upper": 0.16,
+          "pvalue": 0.219
+        },
+        {
+          "rhs": "no_ai_training",
+          "est.std": -0.01,
+          "ci.lower": -0.11,
+          "ci.upper": 0.08,
+          "pvalue": 0.784
+        }
+      ]
+    }
+  }
+}

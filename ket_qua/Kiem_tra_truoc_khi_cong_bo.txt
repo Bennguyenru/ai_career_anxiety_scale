@@ -1,0 +1,34 @@
+RA SOAT TRUOC KHI CONG BO - 2026-10-30 19:40 
+Du lieu: data/ai_career_anxiety_oct2026_n464.csv 
+
+ Nhom Kiem_tra                                                           Ket_qua Chi_tiet       
+ A    Dung 25 cot theo bang hoi thang 10 (khong co cot them)             DAT                    
+ A    Khong co cot dinh danh (email, thoi gian, ten, MSSV...)            DAT                    
+ A    Khong co email/so dien thoai trong noi dung o                      DAT                    
+ A    N = 464                                                            DAT     N = 464        
+ A    ID lien tuc 1..N, khong trung                                      DAT                    
+ A    Khong co o trong                                                   DAT     0 o trong      
+ A    Moi cau tra loi nam trong 1-5                                      DAT                    
+ A    Tat ca qua cau chu y (ATTN = 2)                                    DAT                    
+ A    Khong con phieu straightlining                                     DAT     0 phieu        
+ A    Khong co dong trung hoan toan                                      DAT     0 dong         
+ A    Gia tri hop le: khoi_nganh                                         DAT                    
+ A    Gia tri hop le: nam_hoc                                            DAT                    
+ A    Gia tri hop le: gioi_tinh                                          DAT                    
+ A    Gia tri hop le: tan_suat_AI                                        DAT                    
+ A    Gia tri hop le: da_hoc_AI                                          DAT                    
+ B    Bang luong mau: 583 phieu nhan                                     DAT     583            
+ B    Bang luong mau: so loai cong lai khop                              DAT     583 - 119 = 464
+ B    Nhom gioi tinh trong MIMIC = 442 (loai 22 'Khac'/'Khong muon neu') DAT                    
+ C    Alpha ANX = .878                                                   DAT     0.8784         
+ C    CFA holdout: CFI = .975                                            DAT     0.9745         
+ C    CFA holdout: RMSEA = .057                                          DAT     0.0570         
+ C    Tuong quan tiem an ANX-THR = .87                                   DAT     0.870          
+ C    Do doc IRT 1.47-1.84                                               DAT     1.47-1.84      
+ C    ESEM: ANX1-4 tai cheo .24-.28 len THR                              DAT     0.24-0.28      
+ C    ESEM: ANX5-9 |tai cheo| <= .11                                     DAT     max = 0.11     
+ D    Khong co file du lieu tho/rac trong kho                            DAT                    
+ D    Khong lo email/so dien thoai/duong dan may ca nhan                 DAT                    
+ D    Khong co file > 50 MB                                              DAT                    
+
+Tong: 28 kiem tra | 28 dat | 0 loi | 0 canh bao

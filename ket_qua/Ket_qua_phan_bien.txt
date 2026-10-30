@@ -1,0 +1,60 @@
+Parallel analysis suggests that the number of factors =  1  and the number of components =  NA 
+A. Polychoric eigenvalues: 4.73 0.74 0.68 | PA factors: 1 | loadings 0.57 0.75 | var 0.468 
+ item ANX_f THR_f
+ ANX1  0.46  0.24
+ ANX2  0.46  0.28
+ ANX3  0.45  0.24
+ ANX4  0.44  0.25
+ ANX5  0.58  0.08
+ ANX6  0.75 -0.06
+ ANX7  0.60  0.10
+ ANX8  0.80 -0.11
+ ANX9  0.59  0.06
+ THR1  0.07  0.68
+ THR2 -0.02  0.77
+ THR3  0.10  0.60
+ESEM factor r = 0.78 | fit 0.999 0.013 0.02 
+C. Residual correlations: max |r| = 0.072 | n > .10 = 0 of 36 
+$discipline
+           chisq.scaled df.scaled cfi.scaled rmsea.scaled   dCFI
+configural       99.936        54      0.986        0.061     NA
+thresholds      115.892        72      0.986        0.051  0.001
+loadings        130.093        80      0.984        0.052 -0.002
+intercepts      132.304        88      0.986        0.047  0.002
+
+$year
+           chisq.scaled df.scaled cfi.scaled rmsea.scaled   dCFI
+configural      101.590        54      0.984        0.062     NA
+thresholds      136.075        72      0.979        0.062 -0.005
+loadings        130.315        80      0.983        0.052  0.005
+intercepts      132.689        88      0.985        0.047  0.002
+
+$gender
+           chisq.scaled df.scaled cfi.scaled rmsea.scaled  dCFI
+configural       85.450        54      0.990        0.051    NA
+thresholds      102.338        72      0.991        0.044 0.000
+loadings         99.248        80      0.994        0.033 0.003
+intercepts      107.708        88      0.994        0.032 0.000
+
+$anx_no
+              rhs est.std ci.lower ci.upper pvalue
+17         female    0.11     0.01     0.21  0.024
+18          year1   -0.17    -0.28    -0.07  0.001
+19     other_disc   -0.21    -0.31    -0.10  0.000
+20 no_ai_training   -0.16    -0.27    -0.05  0.006
+
+$thr
+              rhs est.std ci.lower ci.upper pvalue
+13         female    0.12     0.02     0.22  0.020
+14          year1   -0.16    -0.27    -0.05  0.003
+15     other_disc   -0.30    -0.40    -0.20  0.000
+16 no_ai_training   -0.16    -0.28    -0.05  0.004
+
+$anx_thr
+              rhs est.std ci.lower ci.upper pvalue
+17            THR    0.88     0.79     0.98  0.000
+18         female    0.01    -0.07     0.08  0.799
+19          year1   -0.03    -0.11     0.05  0.488
+20     other_disc    0.06    -0.04     0.16  0.219
+21 no_ai_training   -0.01    -0.11     0.08  0.784
+

@@ -1,0 +1,66 @@
+SUPPLEMENTARY ANALYSES | N = 464 | 2026-10-30 19:39 
+
+== A. Omega ==
+  ANX   THR   ASE   CSE 
+0.879 0.766 0.554 0.635 
+ANX (one-factor model): 0.879 
+
+== B. WLSMV fit ==
+            chisq.scaled df.scaled pvalue.scaled cfi.scaled tli.scaled rmsea.scaled  srmr
+OneFactor         45.354        27         0.015      0.994      0.992        0.038 0.026
+ThreeFactor       41.983        24         0.013      0.994      0.991        0.040 0.025
+Measurement      242.734       129         0.000      0.977      0.973        0.044 0.044
+ANX_THR_one      117.301        54         0.000      0.986      0.983        0.050 0.034
+ANX_THR_two       79.852        53         0.010      0.994      0.993        0.033 0.028
+Facet correlations (WLSMV):
+      OBS   OPP   CMP
+OBS 1.000            
+OPP 1.003 1.000      
+CMP 0.993 1.056 1.000
+Difference test, one vs two factors:
+
+Scaled and Shifted Chi-Squared Difference Test (method = “satorra.2000”)
+
+lavaan->lavTestLRT():  
+   lavaan NOTE: The “Chisq” column contains standard test statistics, not the robust test that should be reported per model. A 
+   robust difference test is a function of two standard (not robust) statistics.
+
+      Df AIC BIC  Chisq Chisq diff   RMSEA Df diff Pr(>Chisq)    
+w_two 53         42.953                                          
+w_one 54         68.050     18.664 0.22789       1  1.559e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+ANX loadings (WLSMV): 0.64 0.73 | ANX-THR r = 0.878 0.824 0.932 
+
+== C. ESEM (3 factors, geomin rotation): converged = FALSE ==
+
+== C. ESEM (3 factors, oblimin rotation): converged = FALSE ==
+
+== D. Latent mean differences (group 2 minus group 1; d = difference / pooled latent SD) ==
+discipline : IT vs Non-IT | diff = -0.039 SE = 0.085 p = 0.649 d = -0.05 
+year : Junior vs Senior | diff = 0.267 SE = 0.072 p = 0.000222 d = 0.38 
+gender : Male vs Female | diff = 0.245 SE = 0.086 p = 0.00453 d = 0.33 
+
+== E. MIMIC (n = 442 ) ==
+ANX on covariates, THR not controlled:
+            rhs est.std pvalue
+         female   0.115  0.024
+          year1  -0.172  0.001
+     other_disc  -0.205  0.000
+ no_ai_training  -0.159  0.006
+THR on covariates:
+            rhs est.std pvalue
+         female   0.119  0.020
+          year1  -0.162  0.003
+     other_disc  -0.301  0.000
+ no_ai_training  -0.165  0.004
+ANX on covariates, THR controlled:
+            rhs est.std pvalue
+            THR   0.885  0.000
+         female   0.010  0.799
+          year1  -0.029  0.488
+     other_disc   0.061  0.219
+ no_ai_training  -0.013  0.784
+R2: 0.433 0.504 0.45 0.451 0.421 0.469 0.476 0.476 0.407 0.556 0.542 0.504 0.768 0.23 
+  cfi.robust   tli.robust rmsea.robust         srmr 
+       0.992        0.990        0.021        0.028 
