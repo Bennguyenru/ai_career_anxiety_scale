@@ -325,13 +325,13 @@
       },
       "a_min": 1.47,
       "a_max": 1.84,
-      "b_min": -2.49,
-      "b_max": 1.31,
-      "rel80_lo": -3,
-      "rel80_hi": 2.05,
-      "peak_info": 7.44,
-      "peak_theta": -0.75,
-      "share_in_range": 0.985
+      "b_min": -2.59,
+      "b_max": 1.51,
+      "rel80_lo": -3.3,
+      "rel80_hi": 2.1,
+      "peak_info": 7.43,
+      "peak_theta": -0.8,
+      "share_in_range": 0.991
     },
     "norms": {
       "p10": 2.33,

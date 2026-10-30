@@ -1,4 +1,4 @@
-RA SOAT TRUOC KHI CONG BO - 2026-10-30 19:40 
+RA SOAT TRUOC KHI CONG BO - 2026-10-30 20:31 
 Du lieu: data/ai_career_anxiety_oct2026_n464.csv 
 
  Nhom Kiem_tra                                                           Ket_qua Chi_tiet       
@@ -25,10 +25,13 @@ Du lieu: data/ai_career_anxiety_oct2026_n464.csv
  C    CFA holdout: RMSEA = .057                                          DAT     0.0570         
  C    Tuong quan tiem an ANX-THR = .87                                   DAT     0.870          
  C    Do doc IRT 1.47-1.84                                               DAT     1.47-1.84      
+ C    Vi tri IRT -2.59 den 1.51 (Table S7)                               DAT     -2.59 den 1.51 
+ C    Do tin cay co dieu kien >= .80 tu theta -3.3 den 2.1               DAT     -3.3 den 2.1   
+ C    Ty le mau trong khoang do (99.1%)                                  DAT     0.991          
  C    ESEM: ANX1-4 tai cheo .24-.28 len THR                              DAT     0.24-0.28      
  C    ESEM: ANX5-9 |tai cheo| <= .11                                     DAT     max = 0.11     
  D    Khong co file du lieu tho/rac trong kho                            DAT                    
  D    Khong lo email/so dien thoai/duong dan may ca nhan                 DAT                    
  D    Khong co file > 50 MB                                              DAT                    
 
-Tong: 28 kiem tra | 28 dat | 0 loi | 0 canh bao
+Tong: 31 kiem tra | 31 dat | 0 loi | 0 canh bao

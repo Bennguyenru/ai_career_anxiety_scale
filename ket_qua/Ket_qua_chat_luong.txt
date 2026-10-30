@@ -39,9 +39,9 @@ f_eqCSE 130 21828 21997 217.35     2.7049 0.064149       1        0.1
 Slopes (logistic metric):
 ANX1 ANX2 ANX3 ANX4 ANX5 ANX6 ANX7 ANX8 ANX9 
 1.50 1.72 1.57 1.56 1.47 1.75 1.75 1.84 1.47 
-Boundary range: -2.49 to 1.31 
-Conditional reliability >= .80 for theta in -3 2.05 ; peak info 7.44 at -0.75 
+Boundary range: -2.59 to 1.51 
+Conditional reliability >= .80 for theta in -3.3 2.1 ; peak info 7.43 at -0.8 
 Share of sample with theta in that range (from factor scores):
-[1] 0.985
+[1] 0.991
  10%  25%  50%  75%  90% 
 2.33 3.00 3.78 4.11 4.33 

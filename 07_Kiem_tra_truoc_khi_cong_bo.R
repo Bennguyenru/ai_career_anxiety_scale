@@ -62,6 +62,10 @@ cl <- tryCatch(jsonlite::fromJSON(file.path(OUT_TXT, "so_lieu_bai_bao.json")), e
 if (!is.null(cl)) {
   sl_irt <- range(unlist(cl$chat_luong$irt$a_logit))
   chk("C", "Do doc IRT 1.47-1.84", near(sl_irt[1], 1.47, .005) && near(sl_irt[2], 1.84, .005), paste(sl_irt, collapse = "-"))
+  ir <- cl$chat_luong$irt
+  chk("C", "Vi tri IRT -2.59 den 1.51 (Table S7)", near(ir$b_min, -2.59, .005) && near(ir$b_max, 1.51, .005), paste(ir$b_min, ir$b_max, sep = " den "))
+  chk("C", "Do tin cay co dieu kien >= .80 tu theta -3.3 den 2.1", near(ir$rel80_lo, -3.3, .001) && near(ir$rel80_hi, 2.1, .001), paste(ir$rel80_lo, ir$rel80_hi, sep = " den "))
+  chk("C", "Ty le mau trong khoang do (99.1%)", near(ir$share_in_range, .991, .0005), sprintf("%.3f", ir$share_in_range))
   L <- cl$phan_bien$esem$loadings
   x14 <- abs(L$THR_f[L$item %in% paste0("ANX", 1:4)]); x59 <- abs(L$THR_f[L$item %in% paste0("ANX", 5:9)])
   chk("C", "ESEM: ANX1-4 tai cheo .24-.28 len THR", min(x14) >= .24 && max(x14) <= .28, paste(range(x14), collapse = "-"))

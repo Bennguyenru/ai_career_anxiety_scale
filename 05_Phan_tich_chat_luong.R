@@ -35,9 +35,11 @@ ps <- parameterEstimates(f_ord, standardized = TRUE)
 lam <- ps$std.all[ps$op == "=~"]; names(lam) <- ANX
 th <- lapply(ANX, function(v) ps$est[ps$op == "|" & ps$lhs == v]); names(th) <- ANX
 a_no <- lam / sqrt(1 - lam^2)                      # normal-ogive slope
-b <- lapply(ANX, function(v) th[[v]] / sqrt(1 - lam[v]^2)); names(b) <- ANX   # category boundaries on theta
+# Category locations on theta. With theta standardized, P(X >= k) = pnorm((lam*theta - tau)/sqrt(1 - lam^2))
+# = pnorm(a * (theta - tau/lam)), so the location is tau/lam (Takane & de Leeuw, 1987).
+b <- lapply(ANX, function(v) th[[v]] / lam[v]); names(b) <- ANX
 a_logit <- 1.702 * a_no
-theta <- seq(-3, 3, by = 0.05)
+theta <- seq(-4, 4, by = 0.05)                     # wide enough to show where reliability drops below .80
 item_info <- function(a, bb, t) {                 # graded model information (normal ogive)
   P <- cbind(1, sapply(bb, function(bk) pnorm(a * (t - bk))), 0)      # P(X >= k)
   D <- cbind(0, sapply(bb, function(bk) a * dnorm(a * (t - bk))), 0)  # derivatives

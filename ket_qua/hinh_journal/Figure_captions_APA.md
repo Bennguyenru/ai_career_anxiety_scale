@@ -1,6 +1,6 @@
 # Figure captions (APA 7), generated from the current data
 
-Data: data/ai_career_anxiety_oct2026_n464.csv, N = 464. Generated 2026-10-30 19:39.
+Data: data/ai_career_anxiety_oct2026_n464.csv, N = 464. Generated 2026-10-30 20:30.
 
 Item labels in Figure 2 are short English paraphrases. Replace them with the official English wording before submission (item_lab in 03_Figures_journal.R).
 
