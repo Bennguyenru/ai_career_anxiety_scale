@@ -8,7 +8,7 @@ Individual-level data are not posted. Participants were told that results would 
 
 Responses were collected from 27 to 30 October 2026, after ethics approval, through an online Google Forms survey of undergraduates at three universities in Vietnam. Of 583 responses received, 6 duplicate submissions (latest kept), 82 failed attention checks and 31 straightlined responses were removed (`ket_qua/bang/Table0_participant_flow.csv`). The form did not record each student's university.
 
-The raw export is not shared; `00_Lam_sach.R` documents the cleaning steps applied to it.
+The raw export held e-mail addresses that were used only to block duplicate submissions; it is no longer kept, and `00_Lam_sach.R` documents the cleaning steps that were applied to it. Because of this, the attention-check sensitivity analysis (Table S11, script 08) uses a response sheet without e-mail addresses, in which duplicates cannot be identified: it contains 83 failed responses against 82 in the participant flow.
 
 ## Ethics
 

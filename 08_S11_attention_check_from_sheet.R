@@ -7,16 +7,23 @@
 # sheet. Failures (ATTN != 2) and straightliners are identified from the answers.
 # Because the sheet has no e-mail column, duplicate submissions cannot be
 # identified, so the failure group may contain one duplicate (83 here vs. 82 in
-# Table S1).
+# Table S1). The original export with e-mail addresses was used only to block
+# duplicate submissions and is no longer kept.
+#
+# The response sheet holds individual answers and is NOT shared (see README);
+# place it at SHEET_FILE to rerun. Output: ket_qua/bang/TableS11a_*.csv, TableS11b_*.csv
 
+for (p in c("lavaan", "psych", "semTools", "readxl")) if (!requireNamespace(p, quietly = TRUE)) install.packages(p)
 suppressMessages({library(lavaan); library(psych); library(semTools)})
 set.seed(2026)
-dir.create("output", showWarnings = FALSE)
+OUT_DIR <- file.path("ket_qua", "bang")
+dir.create(OUT_DIR, showWarnings = FALSE, recursive = TRUE)
 
-SHEET_FILE <- "data/Tong_hop_form.xlsx"
+SHEET_FILE <- "data/response_sheet_no_email.xlsx"   # 589 rows, no e-mail or time stamp; never pushed (.gitignore)
+stopifnot(file.exists(SHEET_FILE))
 PUB_FILE   <- "data/ai_career_anxiety_oct2026_n464.csv"
 
-pub <- read.csv(PUB_FILE, stringsAsFactors = FALSE, encoding = "UTF-8")
+pub <- read.csv(PUB_FILE, stringsAsFactors = FALSE, fileEncoding = "UTF-8-BOM")
 cols <- names(pub)[-1]
 sh <- as.data.frame(readxl::read_excel(SHEET_FILE, sheet = "Raw Data"))
 sh <- sh[rowSums(!is.na(sh)) > 0, 1:24]
@@ -61,7 +68,7 @@ for (v in c("ANX_mean", "THR_mean")) {
 }
 names(comp)[2:4] <- c("statistic", "p", "effect (V or d)")
 print(comp, digits = 3, row.names = FALSE)
-write.csv(comp, "output/S11a_failed_vs_retained.csv", row.names = FALSE)
+write.csv(comp, file.path(OUT_DIR, "TableS11a_failed_vs_retained.csv"), row.names = FALSE)
 
 # ---------- 2. Main results with the exclusions undone ----------
 m1 <- paste("ANX =~", paste(anx, collapse = " + "))
@@ -115,4 +122,4 @@ res <- rbind(
       "Attention-check step undone (straightliners still removed)"),
   run(rbind(retained, failed, sl_pass), "Both steps undone"))
 print(t(res))
-write.csv(res, "output/S11b_main_results_by_sample.csv", row.names = FALSE)
+write.csv(res, file.path(OUT_DIR, "TableS11b_main_results_by_sample.csv"), row.names = FALSE)

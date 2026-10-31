@@ -1,10 +1,7 @@
 "sample","N","one_factor_CFI_RMSEA_SRMR","three_factor_max_facet_r","four_factor_CFI_RMSEA_SRMR","alpha_ANX","omega_ANX","AVE_ANX","r_ANX_THR","HTMT_ANX_THR","dchisq_1v2","r_ANX_ASE_CSE","ANX_M_SD","status"
-"Analytic sample",464,"0.995 / 0.025 / 0.024","1.04","0.976 / 0.032 / 0.039","0.878","0.878","0.446","0.87 [0.80, 0.94]","0.870","21.57, p <0.001","0.32 / 0.11","3.51 (0.79)","ok | inadmissible; lavaan WARNING: covariance matrix of latent variables
-                is not positive definite;
-                use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
-"Attention-check step undone (straightliners still removed)",527,"0.998 / 0.016 / 0.021","1.03","0.980 / 0.031 / 0.035","0.883","0.883","0.456","0.86 [0.80, 0.92]","0.864","31.78, p <0.001","0.36 / 0.21","3.50 (0.80)","ok | inadmissible; lavaan WARNING: covariance matrix of latent variables
-                is not positive definite;
-                use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
-"Both steps undone",578,"0.998 / 0.015 / 0.019","1.02","0.985 / 0.031 / 0.030","0.905","0.905","0.514","0.89 [0.84, 0.94]","0.888","31.62, p <0.001","0.52 / 0.40","3.47 (0.84)","ok | inadmissible; lavaan WARNING: covariance matrix of latent variables
-                is not positive definite;
-                use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
+"Analytic sample",464,"0.995 / 0.025 / 0.024","1.04","0.976 / 0.032 / 0.039","0.878","0.878","0.446","0.87 [0.80, 0.94]","0.870","21.57, p <0.001","0.32 / 0.11","3.51 (0.79)","ok | inadmissible; lavaan->lav_object_post_check():  
+   covariance matrix of latent variables is not positive definite ; use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
+"Attention-check step undone (straightliners still removed)",527,"0.998 / 0.016 / 0.021","1.03","0.980 / 0.031 / 0.035","0.883","0.883","0.456","0.86 [0.80, 0.92]","0.864","31.78, p <0.001","0.36 / 0.21","3.50 (0.80)","ok | inadmissible; lavaan->lav_object_post_check():  
+   covariance matrix of latent variables is not positive definite ; use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
+"Both steps undone",578,"0.998 / 0.015 / 0.019","1.02","0.985 / 0.031 / 0.030","0.905","0.905","0.514","0.89 [0.84, 0.94]","0.888","31.62, p <0.001","0.52 / 0.40","3.47 (0.84)","ok | inadmissible; lavaan->lav_object_post_check():  
+   covariance matrix of latent variables is not positive definite ; use lavInspect(fit, ""cov.lv"") to investigate. | ok | ok | ok"
